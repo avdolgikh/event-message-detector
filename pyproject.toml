@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "event-message-detector"
+version = "0.1.0"
+description = "Look at the task: https://docs.monadical.com/s/XGN0-l3R3"
+authors = ["avdolgikh <alexey.dolgich@gmail.com>"]
+readme = "README.md"
+packages = [
+    {include = "app"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.5.1"
+transformers = "^4.47.1"
+websockets = "^14.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+flake8 = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
