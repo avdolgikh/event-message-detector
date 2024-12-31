@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "event-message-detector"
 version = "0.1.0"
-description = "Look at the task: https://docs.monadical.com/s/XGN0-l3R3"
+description = "A real-time message stream processor that detects event-related conversations and saves them as structured JSON files."
 authors = ["avdolgikh <alexey.dolgich@gmail.com>"]
 readme = "README.md"
 packages = [

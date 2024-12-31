@@ -20,8 +20,6 @@ THRESHOLD = 0.01  # Minimum score to consider a message as part of an event
 MAX_LOW_SCORES = 3  # Maximum consecutive low-score messages before flushing
 MIN_MESSAGES = 3  # Minimum number of messages required for an event to be saved
 
-# STREAM_URL = "ws://143.110.238.245:8000/stream"
-
 
 class EventProcessor:
     """

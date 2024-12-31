@@ -83,7 +83,7 @@ poetry install
 ### Command-Line Usage
 Run the inference script with a WebSocket URL:
 ```bash
-poetry run python app/inference.py --url ws://143.110.238.245:8000/stream
+poetry run python app/inference.py --url <stream url>
 ```
 
 ### Docker Usage
@@ -95,11 +95,11 @@ docker build -t event-message-detector .
 #### Run the Docker Container
 With volume mounting for results:
 ```bash
-docker run --rm -it -v $(pwd)/results:/app/results event-message-detector --url ws://143.110.238.245:8000/stream
+docker run --rm -it -v $(pwd)/results:/app/results event-message-detector --url <stream url>
 ```
 Without volume mounting:
 ```bash
-docker run --rm -it event-message-detector --url ws://143.110.238.245:8000/stream
+docker run --rm -it event-message-detector --url <stream url>
 ```
 
 ## Development Workflow
